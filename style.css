@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #5f27cd;
+    padding: 16px 0px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 16px solid #341f97;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0px;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    background-color: #009432;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btn-cancelar {
+    background-color: red;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+ul li {
+    max-width: 305px;
+    list-style: none;
+    position: relative;
+    height: 305px;
+    overflow-y: hidden;
+    background-color: black;
+    margin: 1px;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+
+ul li img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+ul li:hover .overlay-imagem-link{
+    opacity: 1;
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
